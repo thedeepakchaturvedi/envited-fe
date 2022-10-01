@@ -1,0 +1,90 @@
+.create-event-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.create-event-container .heading {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    background: linear-gradient(90deg, #8456EC 24.2%, #E87BF8 120.46%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.create-event-container .card {
+    width: 60%;
+    height: 70%;
+    border-radius: 13.2326px;
+    border: 1px solid #CCB6FF;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.create-event-container .card .event-name-container,.host-name-container,.start-time,.end-time,.location-container,.event-photo-container{
+    /* border: 1px solid black; */
+    filter: none;
+    width: 75%;
+}
+
+.create-event-container .btn-container {
+    background: linear-gradient(90deg, #8456EC 3.25%, #E87BF8 100%);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+    cursor: pointer;
+    width: 33%;
+}
+
+.create-event-container .btn-container .txt {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: right;
+
+    color: #FFFFFF;
+}
+
+.create-event-container label {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: right;
+
+    color: #000000;
+}
+
+.create-event-container input {
+    font-family: 'Helvetica';
+    font-style: normal;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+.create-event-container #img {
+    border: none;
+}
+

@@ -1,0 +1,135 @@
+.landingPage-container {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #F6F2FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.landingPage-container .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin: 0 10%;
+}
+
+.landingPage-container .header .title {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: #240D57;
+}
+
+.landingPage-container .header .title .snapchat {
+    background: linear-gradient(90deg, #8456EC 24.2%, #E87BF8 120.46%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.landingPage-container .header .sub-title {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #4F4F4F;
+}
+
+.landingPage-container .event-img {
+    width: 165.63px;
+    height: 292px;
+    filter: drop-shadow(0px 0px 17.6435px rgba(0, 0, 0, 0.05));
+    border-radius: 13.2326px;
+
+}
+
+.landingPage-container .event-img img {
+    width: 165.63px;
+    height: 292px;
+}
+
+.landingPage-container .btn-container {
+    background: linear-gradient(90deg, #8456EC 3.25%, #E87BF8 100%);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.landingPage-container .btn-container .txt {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+@media (min-width:960px) {
+    .landingPage-container .header .title {
+        font-size: 64px;
+    line-height: 74px;
+    }
+
+    .landingPage-container .header .sub-title {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 28px;
+        width: 521px;
+        height: 56px;   
+    }
+
+    .landingPage-container .event-img, .landingPage-container .event-img img {
+        width: 311px;
+        height: 548.27px;
+    }
+    .landingPage-container .btn-container {
+        width: 279px;
+        font-size: 20px;
+        line-height: 23px;
+    }
+}
+
+@media (min-width : 1500px) {
+    .landingPage-container {
+        width: 100vw;
+        min-height: 100vh;
+        background-color: #F6F2FF;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    
+    .landingPage-container .header .title,.landingPage-container .header .sub-title{
+        align-self: flex-end;
+        text-align: right;
+    }
+    .landingPage-container .header {
+        margin: 0;
+    }
+    
+    .landingPage-container .btn-container {
+        position: absolute;
+        left: calc(50% - 320px/2 + 375px);
+        top: 72%;
+    }
+    .landingPage-container .event-img, .landingPage-container .event-img img {
+        width: 440px;
+        height: 775.69px;
+    }
+}
